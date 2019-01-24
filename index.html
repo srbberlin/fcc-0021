@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+    <head>
+        <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <h1 id="title">Survey:<br> Know Your Neighbourhood</h1>
+        <p id="description">What if someone just asked you for the nearest plumber ?<br>Let us know how much you are familiar wit this quarter !</p>
+        <div id="form-outer">
+            <form id="survey-form" action="https://freecodecamp.com">
+                <fieldset class="field">
+                    <legend>&nbsp;Personalia :&nbsp;</legend>
+                    <div class="input">
+                        <label id="name-label" for="name">Full name</label>
+                        <input id="name" type="text" required placeholder="Your real name">
+                    </div>
+                    <div class="input">
+                        <label id="email-label" for="email">email address</label>
+                        <input id="email" type="email" required placeholder="Your valid email adress">
+                    </div>
+                    <div class="input">
+                        <label id="number-label" for="number">Age</label>
+                        <input id="number" type="number" min="16" max="100" required placeholder="From 16 to 100">
+                    </div>
+                    <div class="input">
+                        <label for="dropdown">Status</label>
+                        <select id="dropdown">
+                            <option value="1">Pupil</option> 
+                            <option value="2">Student</option> 
+                            <option value="3">Employee</option> 
+                            <option value="4">Retiree</option> 
+                            <option value="5" selected>Something else</option> 
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="field">
+                    <legend>&nbsp;How long do you live in this quarter ?&nbsp;</legend>
+                    <div class="input">
+                        <label for="r1">I don't, I am from abroad</label>
+                        <input id="r1" type="radio" name="a" value="a1">
+                    </div>
+                    <div class="input">
+                        <label for="r2">Just for one month</label>
+                        <input id="r2" type="radio" name="a" value="a2">
+                    </div>
+                    <div class="input">
+                        <label for="r3">Less than six months</label>
+                        <input id="r3" type="radio" name="a" value="a3">
+                    </div>                        
+                    <div class="input">
+                        <label for="r4">More than a year</label>
+                        <input id="r4" type="radio" name="a" value="a4">
+                    </div>
+                    <div class="input">
+                        <label for="r4">I can't say, allways ?</label>
+                        <input id="r4" type="radio" name="a" value="a4" checked>
+                    </div>
+                </fieldset>
+                <fieldset class="field">
+                    <legend>&nbsp;Need a plumber ? Where to find :&nbsp;</legend>
+                    <div class="input">
+                        <label for="c1">I saw his shop floor the other day</label>
+                        <input id="c1" type="checkbox" name="ba" value="b1">
+                    </div>
+                    <div class="input">
+                        <label for="c2">I ask my naighbour</label>
+                        <input id="c2" type="checkbox" name="bb" value="b2">
+                    </div>
+                    <div class="input">
+                        <label for="c3">I have a look into the local newspaper</label>
+                        <input id="c3" type="checkbox" name="bb" value="b2">
+                    </div>
+                    <div class="input">
+                        <label for="c4">I pin a note at the next tree</label>
+                        <input id="c4" type="checkbox" name="bc" value="b3">
+                    </div>
+                    <div class="input">
+                        <label for="c5">I have a look at the searchengine</label>
+                        <input id="c5" type="checkbox" name="bd" value="b4">
+                    </div>
+                </fieldset>
+                <fieldset class="field">
+                        <legend>&nbsp;What else ?&nbsp;</legend>
+                    <div class="input">
+                        <label for="t">Giv us a comment</label><br><br>
+                        <textarea id="t" name="t" placeholder="Eventually change this"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="field">
+                        <legend>&nbsp;Finally :&nbsp;</legend>
+                    <div class="input">
+                        <label for="submit">Submit your form</label>
+                        <button id="submit" type="submit" name="submit">Hit !</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
