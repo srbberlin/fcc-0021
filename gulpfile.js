@@ -36,7 +36,6 @@ function assets () {
 }
 
 function css () {
-  console.log('css: '+config.cssin+' -> '+config.cssout)
   return gulp
     .src(config.cssin)
     .pipe(gulp.dest(config.cssout))
