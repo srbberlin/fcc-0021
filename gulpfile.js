@@ -36,14 +36,6 @@ function assets () {
 }
 
 function css () {
-/*
-  return gulp
-    .src(config.cssin)
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(config.cssout))
-*/
   console.log('css: '+config.cssin+' -> '+config.cssout)
   return gulp
     .src(config.cssin)
