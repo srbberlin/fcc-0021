@@ -18,7 +18,7 @@ label {
     vertical-align: top;
 }
 
-input[id='name'],input[id='email'],input[id='number'],select[id='dropdown'] {
+input[id='name'],input[id='email'],input[id='number'],select[id='dropdown'],select[id='gender'] {
     width: 200px;
 }
 
